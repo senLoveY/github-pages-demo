@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pages — демо · ИТиВП</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #0f172a;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --line: #e2e8f0;
+      --card: #f8fafc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 72px 0 48px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: #eff6ff;
+      border: 1px solid #dbeafe;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 44px; letter-spacing: -0.02em; margin-bottom: 14px; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 620px; margin: 0 auto; }
+    .status {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 24px; font-size: 14px; font-weight: 600; color: #15803d;
+    }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; }
+    section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+    h2 { font-size: 22px; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .card h3 { font-size: 16px; margin-bottom: 6px; }
+    .card p { font-size: 14px; color: var(--muted); }
+    code {
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      background: #f1f5f9; padding: 2px 6px; border-radius: 6px; font-size: 13px;
+    }
+    footer { padding: 36px 0 64px; text-align: center; color: var(--muted); font-size: 14px; }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="badge">Развёрнуто на GitHub Pages</span>
+      <h1>Демо-сайт</h1>
+      <p class="lead">Статическая страница, опубликованная бесплатно через GitHub Pages.
+        Пример для презентации по теме «Бесплатные облачные решения».</p>
+      <div class="status"><span class="dot"></span> Сайт работает по HTTPS</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Что показывает это демо</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Хостинг статики</h3>
+          <p>HTML, CSS и JS раздаются с CDN GitHub без своего сервера.</p>
+        </div>
+        <div class="card">
+          <h3>Бесплатный HTTPS</h3>
+          <p>Сертификат выпускается автоматически для домена *.github.io.</p>
+        </div>
+        <div class="card">
+          <h3>Деплой из Git</h3>
+          <p>Каждый <code>git push</code> в ветку обновляет сайт.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Исходный код: <a href="https://github.com/senLoveY/github-pages-demo">github.com/senLoveY/github-pages-demo</a>
+    </div>
+  </footer>
+</body>
+</html>
